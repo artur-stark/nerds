@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Каталог</title>
+</head>
+<body>
+<header>
+	<img src="svg/nerdslogo.svg" alt="Логотип нёрдс">
+	<nav>
+		<ul>
+			<li><a href="#">Студия</a></li>
+			<li><a href="#">Клиенты</a></li>
+			<li><a href="#">Магазин</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</nav>
+	<ul>
+		<li><a href="#">Корзина</a></li>
+	</ul>
+	<section>
+		<h1>Магазин готовых шаблонов</h1>
+	</section>
+</header>
+<main>
+	<section>
+		<form>
+			<h2>Фильтры</h2>
+			<h3>Стоимость:</h3>
+			<div class="range-slider">
+  				<div class="range-slider-track">
+    				<div class="range-slider-pin range-slider-pin-min"></div>
+     				<div class="range-slider-pin range-slider-pin-max"></div>
+  				</div>
+  				<label for="price-range-start">От</label>
+ 				<input type="number" value="0" name="min" id="price-range-start">
+ 				<label for="price-range-end">До</label>
+ 				<input type="number" value="0" name="max" id="price-range-end">
+			</div>
+			<h3>Сетка:</h3>
+			<input type="radio" name="setka" value="adapt" id="adapt">
+			<label for="adapt">Адаптивная</label>
+			<input type="radio" name="setka" value="fixed" id="fixed">
+			<label for="fixed">Фиксированная</label>
+			<input type="radio" name="setka" value="rezin" id="rezin">
+			<label for="rezin">Резиновая</label>
+			<h3>Особенности:</h3>
+			<input type="checkbox" name="specific" value="slider" id="slider">
+			<label for="slider">Слайдер</label>
+			<input type="checkbox" name="specific" value="adv-block" id="adv-block">
+			<label for="adv-block">Блок преимуществ</label>
+			<input type="checkbox" name="specific" value="news" id="news">
+			<label for="news">Новости</label>
+			<input type="checkbox" name="specific" value="gallery" id="gallery">
+			<label for="gallery">Галерея</label>
+			<input type="checkbox" name="specific" value="basket" id="basket">
+			<label for="basket">Корзина</label><br>
+			<button type="submit">Показать</button>
+		</form>
+	</section>
+	<section>
+		<h2>Сортировать</h2>
+		<ul>
+			<li><a href="#">По цене</a></li>
+			<li><a href="#">По типу</a></li>
+			<li><a href="#">По названию</a></li>
+		</ul>
+	</section>
+	<section>
+		<h2>Каталог макетов</h2>
+		<ul>
+			<li>
+				<img src="img/img-sedona.jpg" alt="Седона">
+			</li>
+			<li>
+				<img src="img/img-pink.jpg" alt="Пинк">
+			</li>
+			<li>
+				<img src="img/img-barbershop.jpg" alt="Барбершоп">
+			</li>
+			<li>
+				<img src="img/img-mishka.jpg" alt="Мишка">
+			</li>
+			<li>
+				<img src="img/img-aplus.jpg" alt="А-плюс">
+			</li>
+			<li>
+				<img src="img/img-kvast.jpg" alt="Квас">
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Страницы</h2>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>Следующая</li>
+		</ul>
+	</section>
+	<section>
+			<img src="img/map.jpg" alt="Карта">
+			<img src="img/map-marker.png" alt="">
+			<h2>Контакты</h2>
+			<div>
+				<p>NЁRDS design studio</p>
+				<p>
+					191186, Санкт-Петербург,<br> 
+					ул. Б. Конюшенная, д. 19/8<br>
+					тел. +7 (812) 275-75-75
+				</p>
+				<button type="button">Напишите нам</button>
+			</div>
+	</section>
+	<footer>
+			<div>
+				<ul>
+					<li><a href="#"><img src="svg/vk-icon.svg" alt="vk"></a></li>
+					<li><a href="#"><img src="svg/fb-icon.svg" alt="fb"></a></li>
+					<li><a href="#"><img src="svg/insta-icon.svg" alt="inst"></a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Давайте дружить, это выгодно!</h3>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</footer>
+</main>
+</body>
+</html>
