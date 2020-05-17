@@ -60,11 +60,11 @@
 			<div class="radio-bar-wrapper">
 				<div class="radio-bar">
 					<input type="radio" name="slide-number" id="first" class="first visually-hidden">
-					<label for="first" aria-label="Первый слайд"></label>
+					<label for="first" aria-label="Первый слайд" tabindex="0"></label>
 					<input type="radio" name="slide-number" id="second" class="second visually-hidden">
-					<label for="second" aria-label="Второй слайд"></label>
+					<label for="second" aria-label="Второй слайд" tabindex="0"></label>
 					<input type="radio" name="slide-number" id="third" class="third visually-hidden">
-					<label for="third" aria-label="Третий слайд"></label>
+					<label for="third" aria-label="Третий слайд" tabindex="0"></label>
 				</div>
 			</div>
 		</section>
@@ -94,65 +94,80 @@
 				</li>
 			</ul>
 		</section>
-		<section>
-			<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
-			<p>
-				Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
-			превыше креатива. Работаем не покладая рук, как роботы.
-			</p>
-			<p>Выполняем заказы на разработку:</p>
-			<ul>
-				<li>Веб-сайтов любой сложности</li>
-				<li>Мобильных приложений для IOS или Android</li>
-				<li>Слайдшоу и видео для корпоративных презентаций</li>
-			</ul>
-		</section>
-		<section>
-			<h2>Статистика</h2>
-			<img src="img/nerds-illustration.png" alt="Лого">
-			<p>С 2004 года любим точность во всем:</p>
-			<ul>
-				<li><span>146%</span>уровень самоотдачи</li>
-				<li><span>100%</span>Соблюдение сроков</li>
-				<li><span>50%</span>Минимальная предоплата</li>
-			</ul>
-		</section>
-		<section>
-			<h2>Партнеры</h2>
-			<ul>
+		<div class="about-us-divideline">
+		<div class="container about-us-wrapper">
+			<section class="about-us">
+				<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+				<p>
+					Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
+				превыше креатива. Работаем не покладая рук, как роботы.
+				</p>
+				<h3>Выполняем заказы на разработку:</h3>
+				<ul>
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для IOS или Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</section>
+			<section class="stats">
+				<h2 class="visually-hidden">Статистика</h2>
+				<img src="img/nerds-illustration.png" alt="Лого">
+				<p>С 2004 года любим точность во всем:</p>
+				<ul>
+					<li><span class="stats-number">146<sup>%</sup></span><span class="stats-desc">Уровень самоотдачи</span></li>
+					<li><span class="stats-number">100<sup>%</sup></span><span class="stats-desc">Соблюдение сроков</span></li>
+					<li><span class="stats-number">50<sup>%</sup></span><span class="stats-desc">Минимальная предоплата</span></li>
+				</ul>
+			</section>
+		</div>
+		</div>
+		<section class="partners">
+			<h2 class="visually-hidden">Партнеры</h2>
+			<ul class="partners-list">
 				<li><a href="#"><img src="img/logo-1.png" alt="HTMLACADEMIA"></a></li>
 				<li><a href="#"><img src="img/logo-2.png" alt="Бородинский"></a></li>
 				<li><a href="#"><img src="img/logo-3.png" alt="Пинк"></a></li>
 				<li><a href="#"><img src="img/logo-4.png" alt="Mishka"></a></li>
 			</ul>
 		</section>
-		<section>
-			<img src="img/map.jpg" alt="Карта" width="100%">
-			<img src="img/map-marker.png" alt="">
-			<h2>Контакты</h2>
-			<div>
-				<p>NЁRDS design studio</p>
+		<section class="container map">
+			<img src="img/map.jpg" alt="Карта" class="map-image">
+			<img src="img/map-marker.png" alt="" class="map-marker">
+			<h2 class="visually-hidden">Контакты</h2>
+			<div class="contact-us">
+				<h3>NЁRDS design studio</h3>
 				<p>
 					191186, Санкт-Петербург,<br> 
 					ул. Б. Конюшенная, д. 19/8<br>
-					тел. +7 (812) 275-75-75
+					<span>тел. +7 (812) 275-75-75</span>
 				</p>
-				<button type="button">Напишите нам</button>
+				<button type="button" class="button">Напишите нам</button>
 			</div>
 		</section>
-		<footer>
-			<div>
-				<ul>
+		<footer class="footer-main">
+			<div class="socials">
+				<ul class="socials-list">
 					<li><a href="#"><img src="svg/vk-icon.svg" alt="vk"></a></li>
 					<li><a href="#"><img src="svg/fb-icon.svg" alt="fb"></a></li>
 					<li><a href="#"><img src="svg/insta-icon.svg" alt="inst"></a></li>
 				</ul>
 			</div>
-			<div>
+			<div class="sale container">
 				<h3>Давайте дружить, это выгодно!</h3>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</footer>
+		<section class="popup">
+			<form>
+				<h2>Напишите нам!</h2>
+				<label>Ваше имя:</label>
+				<input type="text" name="name">
+				<label>Ваш e-mail:</label>
+				<input type="e-mail" name="email">
+				<label>Текс письма:</label	>
+				<textarea placeholder="В свободной форме"></textarea>
+			</form>
+		</section>
 	</main>
 	<script type="text/javascript" src="js/slider.js"></script>
 </body>
