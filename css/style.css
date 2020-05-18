@@ -502,4 +502,136 @@ input[type="radio"].third:checked + label::before{
 	margin-top: 10px;
 	color: #444444;
 }
+.popup{
+	width: 960px;
+	background-color: #fff;
+	box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	margin-left: -480px;
+	padding: 73px
+ 	100px 84px;
+	z-index: 10;
+	display: none;
+}
+.popup-form h2{
+	margin: 0;
+	color:#000;
+	font-size: 45px;
+	line-height: 45px;
+	margin-bottom: 48px;
+}
+.contact-form{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
+}
+.popup-form label{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 12px;
+}
+.popup-form input{
+	width: 360px;
+	padding: 14px;
+	margin-bottom: 36px; 
+}
+.popup-form textarea{
+	width: 760px;
+	height: 118px;
+	margin-bottom: 47px;
+	padding: 13px 15px;
+}
+.input{
+	border: 2px solid #d7dcde;
+	border-radius: 4px;
+}
+.input:hover{
+	border: 2px solid #b4b9bb;
+}
+.input:focus{
+	border: 2px solid #000;
+}
+
+.invalid{
+	border: 2px solid #e74246;
+}
+.popup-close{
+	border:none;
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	background-color: transparent;
+	top: 78px;
+	right: 90px;
+	cursor: pointer;
+	opacity: 0.3;
+}
+.popup-close::before{
+	display: block;
+	content: "";
+	height: 27px;
+	width: 3px;
+	background-color: #fb565a;
+	transform: rotate(45deg);
+	position: absolute;
+	top: -3px;
+	right: 8px;
+}
+.popup-close::after{
+	display: block;
+	content: "";
+	height: 27px;
+	width: 3px;
+	background-color: #fb565a;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: -3px;
+	right: 8px;
+}
+.popup-close:hover{
+	border:none;
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	background-color: transparent;
+	top: 78px;
+	right: 90px;
+	cursor: pointer;
+	opacity: 1;
+}
+.popup-close:active{
+	border:none;
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	background-color: transparent;
+	top: 78px;
+	right: 90px;
+	cursor: pointer;
+	opacity: 0.1;
+}
+.popup-show{
+	display: block;
+	animation-name: popup;
+	animation-duration: 0.5s; 
+}
+@keyframes popup{
+	0%{
+		transform:translateY(-2000px);
+	}
+	50%{
+		transform: translateY(30px);
+	}
+	75%{
+		transform: translateY(-15px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
