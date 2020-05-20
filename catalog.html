@@ -32,12 +32,14 @@
 	<section class="filters">
 		<form>
 			<h2 class="visually-hidden">Фильтры</h2>
-			<h3>Стоимость:</h3>
+			<h3 class="price-header filter-header">Стоимость:</h3>
 			<div class="range-slider">
+				<div class="range-slider-wrapper">
   				<div class="range-slider-track">
     				<div class="range-slider-pin range-slider-pin-min"></div>
      				<div class="range-slider-pin range-slider-pin-max"></div>
   				</div>
+  			</div>
   				<div class="range-input"><div><label for="price-range-start">От</label>
  				<input type="number" value="0" name="min" id="price-range-start" class="input"></div>
  				<div>
@@ -47,7 +49,7 @@
  			</div>
 			</div>
 			<div class="web">
-			<h3>Сетка:</h3>
+			<h3 class="web-header filter-header">Сетка:</h3>
 			<div class="input-wrapper">
 			<input type="radio" name="setka" value="adapt" id="adapt" class="visually-hidden">
 			<label for="adapt">Адаптивная</label></div>
@@ -57,7 +59,7 @@
 			<label for="rezin">Резиновая</label></div>
 			</div>
 			<div class="specific">
-			<h3>Особенности:</h3>
+			<h3 class="specific-header filter-header">Особенности:</h3>
 			<div class="input-wrapper"><input type="checkbox" name="specific" value="slider" id="slider" class="visually-hidden">
 			<label for="slider">Слайдер</label></div>
 			<div class="input-wrapper"><input type="checkbox" name="specific" value="adv-block" id="adv-block" class="visually-hidden">
